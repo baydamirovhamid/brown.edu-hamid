@@ -363,15 +363,193 @@ nav {
     gap: 5px;
 }
 
-/* ! background image part */
+.academics {
+    background-image: url(https://www.brown.edu/sites/default/files/styles/wide_xlrg/public/2019-04/20170901_COMM_firstreading12.jpg?h=1d4b4ebd&itok=6Q7whu_d);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    margin-top: 70px;
+    display: flex;
+}
+
+.academics-section::before {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 478.5%;
+    left: 0;
+    z-index: 55;
+    background: rgba(0, 0, 0, 0.56);
+    content: "";
+}
+
+.academics-main {
+    position: relative;
+    z-index: 80;
+    padding: 15% 5%;
+    width: 50%;
+}
+
+.academics-main-text {
+    width: 400px;
+    margin-right: 0;
+    margin-bottom: 43px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.academics-main-title {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.academics-main-description {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.academics-main-link-cards {
+    margin-bottom: 20px;
+}
+
+.academics-link-card {
+    display: inline-block;
+    padding: 22px 30px 23px;
+    background: #FFC72C;
+    color: #4E3629;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.academic-cards-section {
+    width: 50%;
+    position: relative;
+    z-index: 60;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    padding: 0 30px;
+}
+
+.academic-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.academic-card {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    width: 50%;
+}
+
+.academic-card-link {
+    padding: 50px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.academic-card-link:hover {
+    background: #FFC72C;
+    color: #4E3629;
+}
+
+.academic-card-title {
+    font-size: 24px;
+}
 
 .yellow-div {
     background-color: #FFC72C !important;
 }
 
-/* ! 3video card part */
+.video-section {
+    display: flex;
+    padding: 20px 60px 100px;
+}
 
-/* ! connect brown part */
+.connect-brown {
+    display: flex;
+    background-color: #000;
+}
+
+.connect-brown-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connect-brown-title {
+    padding: 60px 0 0 60px;
+    width: 400px;
+    font-size: 33px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.connect-brown-link {
+    color: #FFC72C;
+    display: inline-block;
+    padding: 10px 0 0 60px;
+    text-transform: uppercase;
+}
+
+.connect-brown-photos {
+    width: calc(100% - 500px);
+    position: relative;
+}
+
+.connect-photos {
+    display: flex;
+}
+
+.connect-photos::before {
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    margin: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    box-shadow: inset 0 0 0 1px #fff;
+    content: "";
+    pointer-events: none;
+}
+
+.connect-photo-card {
+    width: 66.67%;
+}
+
+.connect-photo-card:nth-child(2) {
+    width: 33.33%;
+    display: block;
+}
+
+.connect-photo-card img {
+    width: 100%;
+    display: block;
+}
+
+.connect-text {
+    width: calc(100% - 60px);
+    margin: 0 30px 30px;
+    padding: 29px 30px 24px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    background: #fff;
+    color: #5b5b5b;
+    font-weight: 400;
+    font-style: italic;
+}
 
 .news-section {
     position: sticky;
@@ -455,7 +633,137 @@ nav {
     transition: color .25s;
 }
 
-/* ! footer */
 footer {
     background-color: #4E3629;
+}
+
+footer section {
+    padding: 90px 0 45px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 45px;
+}
+
+.footer-info-section {
+    width: calc(100% - 325px);
+    border-right: 1px solid rgba(183, 176, 156, 0.2);
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.contact {
+    margin-bottom: 12px;
+}
+
+.contact p {
+    margin-bottom: 28px;
+    color: #B7B09C;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.contact-info>a>i {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-info {
+    display: flex;
+    gap: 40px;
+    font-size: 24px;
+}
+
+.contact-info a {
+    color: #fff;
+}
+
+.footernav {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(183, 176, 156, 0.2);
+}
+
+.footernav2 {
+    padding: 30px 0;
+}
+
+.footernav ul,
+.footernav2 ul {
+    display: flex;
+    gap: 32px;
+}
+
+.footernav ul li a,
+.footernav2 ul li a {
+    color: #FFC72C;
+}
+
+.footer-side {
+    width: 325px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.footer-together {
+    width: 100%;
+}
+
+.footer-together img {
+    max-width: 202px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.footer-together p {
+    font-weight: 400;
+    color: #B7B09C;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 0 16px;
+}
+
+.footer-together a {
+    color: #FFC72C;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.copyright-part {
+    background: rgba(0, 0, 0, 0.16);
+    padding: 10px 0;
+}
+
+.footer-copyright {
+    display: flex;
+    margin: 0 45px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-copyright p {
+    color: #B7B09C;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-media ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-media ul li a i {
+    font-size: 22px;
 }
